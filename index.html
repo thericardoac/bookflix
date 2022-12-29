@@ -7,6 +7,84 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        
+        <header class="site-section">
+            <div class="header-background">
+                <img src="images/books-small.jpg" 
+                srcset="images/books-small.jpg 425w, images/books-medium.jpg 1024w, images/books-large.jpg 1440w" alt="Lots of books">
+            </div>
+
+            <div class="header-top-bar">
+                <div class="logo">Bookflix</div>
+                <button class="account-btn">Sign-In</button>
+            </div>
+
+            <div class="header-info">
+                <h1>Unlimited books, novels, magazines, comics, and more.</h1>
+                <p>Read anywhere. Cancel anytime.</p>
+                <p>Ready to read? Fill the following form to create an account.</p>
+                <p>Already a member? <a class="link" href="#">Sign-In</a></p>
+            </div>            
+        </header>
+
+        <section class="site-section">
+            <form action="#" class="sign-up-form">
+                <h2>Create your Bookflix account</h2>
+                <span class="required-legend">Required fields *</span>
+
+                <div class="form-row">
+                    <label for="first-name">First name: </label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <span class="required-legend">*</span>
+                </div>
+
+                <div class="form-row">
+                    <label for="last-name">Last name: </label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <span class="required-legend">*</span>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="required-legend">*</span>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone-number">Phone number: </label>
+                    <input type="text" id="phone-number" name="phone-number">
+                    <span class="required-legend">*</span>
+                </div>
+                
+                <div class="form-row">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="required-legend">*</span>
+                </div>
+
+                <div class="form-row">
+                    <label for="confirm-password">Confirm password: </label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="required-legend">*</span>
+                </div>
+
+                <div class="form-row">
+                    <input type="checkbox" name="accept-terms" id="accept-terms" required>
+                    <label for="accept-terms">I accept the <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a>.</label>
+                    <span class="required-legend">*</span>
+                </div>
+
+                <div class="form-row">
+                    <button class="account-btn">Create account</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p>Bookflix is not a real service</p>
+            <p>Site created with educational purposes only</p>
+            <p>Please do not enter real sensitive information</p>
+            <p>Photo by <a href="https://unsplash.com/@shiromanikant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shiromani Kant</a> on <a href="https://unsplash.com/images/things/book?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+            <p>Designed and developed by <a href="https://github.com/thericardoac">thericardoac</a></p>
+        </footer>
     </body>
 </html>

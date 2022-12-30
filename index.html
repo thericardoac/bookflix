@@ -3,26 +3,28 @@
     <head>
         <meta charset="UTF-8">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bookflix - Read books, novels, magazines, comics and more</title>
+        <title>Bookflix - Read books, novels, magazines, and more</title>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
         <header class="site-section">
             <div class="header-background">
                 <img src="images/books-small.jpg" 
-                srcset="images/books-small.jpg 425w, images/books-medium.jpg 1024w, images/books-large.jpg 1440w" alt="Lots of books">
+                srcset="images/books-small.jpg 425w, 
+                images/books-medium.jpg 768w, 
+                images/books-large.jpg 1024w" alt="Lots of books">
             </div>
 
             <div class="header-top-bar">
-                <div class="logo">Bookflix</div>
-                <button class="account-btn">Sign-In</button>
+                <a class="logo" href="#">Bookflix</a>
+                <a class="account-btn" href="#">Sign In</a>
             </div>
 
             <div class="header-info">
-                <h1>Unlimited books, novels, magazines, comics, and more.</h1>
+                <h1>Unlimited books, novels, magazines, and more.</h1>
                 <p>Read anywhere. Cancel anytime.</p>
-                <p>Ready to read? Fill the following form to create an account.</p>
-                <p>Already a member? <a class="link" href="#">Sign-In</a></p>
+                <p>Ready to read? Fill the form to create an account.</p>
+                <p>Already a member? <a class="link" href="#">Sign In</a></p>
             </div>            
         </header>
 
@@ -69,7 +71,7 @@
 
                 <div class="form-row">
                     <input type="checkbox" name="accept-terms" id="accept-terms" required>
-                    <label for="accept-terms">I accept the <a href="#">Terms of service</a> and <a href="#">Privacy Policy</a>.</label>
+                    <label for="accept-terms">I accept the <a class="link" href="#">Terms of service</a> and <a class="link" href="#">Privacy Policy</a>.</label>
                     <span class="required-legend">*</span>
                 </div>
 

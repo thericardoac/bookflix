@@ -31,6 +31,7 @@ body {
 header {    
     position: relative;    
     overflow: hidden;
+    box-shadow: inset 0 0 40px 20px black;
 }
 
 .header-background {
@@ -38,14 +39,14 @@ header {
     z-index: -1;
     width: 100%;
     height: 100%;   
-    overflow: hidden;         
+    overflow: hidden;             
 }
 
 .header-background img {    
     width: 100%;
     height: 100%;
     object-fit: cover;       
-    filter: brightness(30%);
+    filter: brightness(30%);   
 }
 
 .header-top-bar {

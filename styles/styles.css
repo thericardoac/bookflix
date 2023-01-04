@@ -154,3 +154,22 @@ header {
     flex-direction: row;
     gap: 1rem;
 }
+
+footer {
+    padding: 3rem 5%;
+}
+
+footer p,
+footer a {    
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--secondary-font-color);
+}
+
+footer p {
+    margin-bottom: 1.25rem;
+}
+
+footer p:last-of-type {
+    margin-bottom: 0;
+}

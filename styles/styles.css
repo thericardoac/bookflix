@@ -137,12 +137,13 @@ header {
 }
 
 .form-row .required-legend {
-    padding-top: 0.4rem;
+    padding-top: 0.2rem;
     margin-bottom: 0;    
 }
 
 .input-wrap {
-    display: flex;
+    display: flex;    
+    align-items: center;
     gap: 0.625rem;
 }
 

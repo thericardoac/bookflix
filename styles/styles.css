@@ -6,10 +6,6 @@
     --secondary-font-color: #6a6a6a;
 }
 
-html {
-    font-size: 100%;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -111,6 +107,8 @@ header {
     background-color: var(--accent-color);    
     border-radius: 0.3125rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .sign-up-form h2 {
@@ -122,7 +120,8 @@ header {
 .sign-up-form .required-legend {
     display: inline-block;
     color: var(--primary-color);
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: right;
 }
 
 .form-row {
@@ -181,4 +180,84 @@ footer p {
 
 footer p:last-of-type {
     margin-bottom: 0;
+}
+
+
+/* RESPONSIVE STYLES */
+/* LARGE PHONES - Between 480px and 768px */
+@media only screen and (min-width: 480px) {
+    html {
+        font-size: 18px;
+    }
+    
+    .header-info,
+    .form-section {
+        padding: 4rem 10%;
+    }
+}
+
+@media only screen and (min-width: 640px) {    
+    .header-info,
+    .form-section {
+        padding: 4rem 15%;
+    }    
+}
+
+/* TABLETS and LAPTOPS - Between 769px - 1215px */
+@media only screen and (min-width: 769px) {      
+    .sign-up-form {        
+        max-width: 500px;
+        margin: 0 auto;
+    }    
+    
+    .form-row {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .terms-row {        
+        gap: 1rem;
+    }
+
+    .form-row .account-btn {
+        width: 100%;
+    }    
+}
+
+@media only screen and (min-width: 950px) {
+    .header-info {
+        padding: 6rem 15%;
+    }
+}
+
+/* LAPTOPS and DESKTOPS - Between 1216px and 1439px */
+@media only screen and (min-width: 1216px) {
+    html {
+        font-size: 20px;
+    }
+
+    .header-info {
+        padding: 6rem 20%;
+    }
+
+    .sign-up-form {        
+        max-width: 552px;        
+    }
+}
+
+/* LAPTOPS AND DESKTOPS - 1440px and up */
+@media only screen and (min-width: 1440px) {
+    html {
+        font-size: 22px;
+    }
+
+    .header-info {
+        padding: 8rem 25%;        
+    }
+
+    .sign-up-form {        
+        max-width: 605px;
+    }
 }

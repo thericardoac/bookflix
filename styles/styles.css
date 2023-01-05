@@ -71,19 +71,19 @@ header {
     text-decoration: none;  
     border: none;
     border-radius: 0.3125rem;
-    padding: 0.5rem;    
+    padding: 0.5rem 1rem;
 }
 
-.header-info {
-    padding: 3rem 5%;
+.header-info {    
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
 }
 
 .header-info h1,
 .header-info p {
-    text-align: center;    
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     margin-bottom: 1rem;    
 }
 
@@ -100,13 +100,15 @@ header {
 }
 
 .form-section {
-    padding: 3rem 5%;
+    padding: 2rem 0;
 }
 
 .sign-up-form {
     background-color: var(--accent-color);    
     border-radius: 0.3125rem;
-    padding: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -114,6 +116,8 @@ header {
 .sign-up-form h2 {
     color: var(--primary-color);
     text-align: center;
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 2rem;
 }
 
@@ -163,13 +167,17 @@ header {
     gap: 1rem;
 }
 
+.terms-row label {
+    line-height: 1.5rem;
+}
+
 footer {
-    padding: 3rem 5%;
+    padding: 2rem 5%;
 }
 
 footer p,
 footer a {    
-    font-size: 0.875rem;
+    font-size: 0.625rem;
     text-align: center;
     color: var(--secondary-font-color);
 }
@@ -184,32 +192,29 @@ footer p:last-of-type {
 
 
 /* RESPONSIVE STYLES */
-/* LARGE PHONES - Between 480px and 768px */
-@media only screen and (min-width: 480px) {
+/* TABLET */
+@media only screen and (min-width: 426px) {
     html {
         font-size: 18px;
     }
+
+    .header-info {        
+        max-width: 464px;
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+    }
     
-    .header-info,
-    .form-section {
-        padding: 4rem 10%;
+    .sign-up-form {        
+        max-width: 450px;
     }
 }
 
-@media only screen and (min-width: 640px) {    
-    .header-info,
-    .form-section {
-        padding: 4rem 15%;
-    }    
-}
-
-/* TABLETS and LAPTOPS - Between 769px - 1215px */
-@media only screen and (min-width: 769px) {      
+/* LAPTOP */
+@media only screen and (min-width: 769px) {    
     .sign-up-form {        
-        max-width: 500px;
-        margin: 0 auto;
-    }    
-    
+        max-width: 478px;
+    }
+
     .form-row {
         flex-direction: row;
         justify-content: flex-end;
@@ -223,41 +228,22 @@ footer p:last-of-type {
 
     .form-row .account-btn {
         width: 100%;
-    }    
-}
-
-@media only screen and (min-width: 950px) {
-    .header-info {
-        padding: 6rem 15%;
     }
 }
 
-/* LAPTOPS and DESKTOPS - Between 1216px and 1439px */
-@media only screen and (min-width: 1216px) {
+/* LAPTOP L AND UP*/
+@media only screen and (min-width: 1025px) {
     html {
         font-size: 20px;
     }
 
-    .header-info {
-        padding: 6rem 20%;
+    .header-info {        
+        max-width: 683px;
+        padding-top: 7rem;
+        padding-bottom: 8rem;
     }
-
+    
     .sign-up-form {        
-        max-width: 552px;        
-    }
-}
-
-/* LAPTOPS AND DESKTOPS - 1440px and up */
-@media only screen and (min-width: 1440px) {
-    html {
-        font-size: 22px;
-    }
-
-    .header-info {
-        padding: 8rem 25%;        
-    }
-
-    .sign-up-form {        
-        max-width: 605px;
+        max-width: 529px;
     }
 }

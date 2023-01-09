@@ -30,7 +30,8 @@ body {
 header {    
     position: relative;    
     overflow: hidden;
-    box-shadow: inset 0 0 2.5rem 1.25rem black;
+    box-shadow: inset 0 0 2.5rem 1.25rem black,
+                inset 0 0 4.5rem 2.25rem black;
 }
 
 .header-background {

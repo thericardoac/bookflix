@@ -1,5 +1,6 @@
 :root {
     --primary-color: #E50914;
+    --primary-color-alert: #f30b17; 
     --bg-color: black;
     --accent-color: #2c2c2c;
     --primary-font-color: white;
@@ -73,6 +74,11 @@ header {
     border: none;
     border-radius: 0.3125rem;
     padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.account-btn:hover {
+    background-color: var(--primary-color-alert);
 }
 
 .header-info {    
@@ -98,6 +104,10 @@ header {
 
 .link {
     color: var(--primary-color);
+}
+
+.link:hover {
+    color: var(--primary-color-alert);
 }
 
 .form-section {

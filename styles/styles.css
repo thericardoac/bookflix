@@ -196,6 +196,10 @@ header {
     line-height: 1.5rem;
 }
 
+.sign-up-form .link {
+    color: var(--primary-font-color);
+}
+
 footer {
     padding: 2rem 5%;
 }

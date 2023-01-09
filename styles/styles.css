@@ -116,8 +116,7 @@ header {
 
 .sign-up-form h2 {
     color: var(--primary-color);
-    text-align: center;
-    width: 80%;
+    text-align: center;    
     margin: 0 auto 1.5rem;    
 }
 

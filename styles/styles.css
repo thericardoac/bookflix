@@ -106,7 +106,7 @@ header {
 .sign-up-form {
     background-color: var(--accent-color);    
     border-radius: 0.3125rem;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     padding: 1.5rem;
     display: flex;
@@ -117,8 +117,7 @@ header {
     color: var(--primary-color);
     text-align: center;
     width: 80%;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    margin: 0 auto 1.5rem;    
 }
 
 .sign-up-form .required-legend {

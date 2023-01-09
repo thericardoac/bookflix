@@ -165,10 +165,18 @@ header {
 
 .input-wrap input[type="text"], 
 .input-wrap input[type="email"],
+.input-wrap input[type="tel"],
 .input-wrap input[type="password"] {    
     width: 100%;
     padding: 0.3125rem;
     font-size: 1rem;
+}
+
+.input-wrap input[type="text"]::placeholder, 
+.input-wrap input[type="email"]::placeholder,
+.input-wrap input[type="tel"]::placeholder,
+.input-wrap input[type="password"]::placeholder {
+    color: #c4c4c4;
 }
 
 .terms-row {

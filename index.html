@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bookflix - Read books, novels, magazines, and more</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <script src="scripts/script.js" defer></script>
     </head>
     <body>
         <header class="site-section">
@@ -29,7 +30,7 @@
         </header>
 
         <section class="site-section form-section">
-            <form action="#" class="sign-up-form">
+            <form action="#" class="sign-up-form" id="register-form">
                 <h2>Create your Bookflix account</h2>
                 <span class="required-legend">* Optional</span>
 
@@ -80,18 +81,17 @@
                         <span class="required-legend">*</span>
                     </div>                    
                 </div>
-                <span class="match-psswds">Passwords do not match!</span>
+                <span class="psswds-legend">Passwords comparison</span>
 
                 <div class="form-row terms-row">
                     <input type="checkbox" name="accept-terms" id="accept-terms" required>
                     <div class="input-wrap">
-                        <label for="accept-terms">I accept the <a class="link" href="#">Terms of service</a> and <a class="link" href="#">Privacy Policy</a>.</label>
-                        <span class="required-legend">*</span>
+                        <label for="accept-terms">I accept the <a class="link" href="#">Terms of service</a> and <a class="link" href="#">Privacy Policy</a>.</label>                        
                     </div>
                 </div>
 
                 <div class="form-row">
-                    <button class="account-btn">Create account</button>
+                    <button id="btn-create-account" class="account-btn">Create account</button>
                 </div>
             </form>
         </section>

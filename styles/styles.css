@@ -1,10 +1,12 @@
 :root {
-    --primary-color: #E50914;
-    --primary-color-alert: #ff000d; 
+    --primary-color: #E50914;    
     --bg-color: black;
     --accent-color: #2c2c2c;
     --primary-font-color: white;
     --secondary-font-color: #6a6a6a;
+
+    --primary-alert-color: #ff000d; 
+    --secondary-alert-color: #1fa24c;
 }
 
 * {
@@ -78,7 +80,7 @@ header {
 }
 
 .account-btn:hover {
-    background-color: var(--primary-color-alert);
+    background-color: var(--primary-alert-color);
 }
 
 .header-info {    
@@ -107,7 +109,7 @@ header {
 }
 
 .link:hover {
-    color: var(--primary-color-alert);
+    color: var(--primary-alert-color);
 }
 
 .form-section {
@@ -169,7 +171,9 @@ header {
 .input-wrap input[type="password"] {    
     width: 100%;
     padding: 0.3125rem;
-    font-size: 1rem;
+    font-size: 1rem;    
+    border: none;
+    border-radius: 0.3125rem;
 }
 
 .input-wrap input[type="text"]::placeholder, 
@@ -179,17 +183,35 @@ header {
     color: #c4c4c4;
 }
 
-.match-psswds {
+.psswds-legend {
     text-align: right;
-    margin: -1.875rem 0 1rem 0;
-    padding-right: 1rem;
-    color: var(--primary-color-alert);
+    font-size: 0.875rem;
+    margin: -1.675rem 0 1rem 0;
+    padding-right: 1rem;      
     visibility: hidden;
+}
+
+.psswds-match-legend {
+    color: var(--secondary-alert-color);
+    visibility: visible;
+}
+
+.psswds-mismatch-legend {
+    color: var(--primary-alert-color);
+    visibility: visible;
+}
+
+.psswds-match-input {    
+    box-shadow: 0 0 0 0.2rem var(--secondary-alert-color);    
+}
+
+.psswds-mismatch-input {    
+    box-shadow: 0 0 0 0.2rem var(--primary-alert-color);    
 }
 
 .terms-row {
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .terms-row label {
@@ -241,7 +263,7 @@ footer p:last-of-type {
 /* LAPTOP */
 @media only screen and (min-width: 769px) {    
     .sign-up-form {        
-        max-width: 478px;
+        max-width: 460px;
     }
 
     .form-row {
@@ -273,6 +295,6 @@ footer p:last-of-type {
     }
     
     .sign-up-form {        
-        max-width: 529px;
+        max-width: 512px;
     }
 }

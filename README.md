@@ -4,6 +4,8 @@ A sign-up form for account creation in the fictional service Bookflix.
 
 This form is just front-end design, it does not have back-end integration. Created to practice form controls and some mobile first and responsive design basics.
 
+Live preview at: https://thericardoac.github.io/sign-up-form/
+
 Banner photo by Shiromani Kant on Unsplash.
 
 ## Caution

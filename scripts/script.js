@@ -1,9 +1,9 @@
 "use strict"
 
 // ************************** GLOBAL VARIABLES **********************
+let formCreateAccount = document.querySelector("#register-form");
 let inputPasswd = document.querySelector("#password");
 let inputConfPasswd = document.querySelector("#confirm-password");
-let formCreateAccount = document.querySelector("#register-form");
 let startVerification = false; //Start verfication or not yet?
 
 
@@ -28,10 +28,20 @@ inputPasswd.addEventListener("input", function() {
     }    
 });
 
-// Prevents form submission if passwords don't match 
+// If passwords don't match, prevents form submission and shake passwords controls
 formCreateAccount.addEventListener("submit", function(event) {
     if (!verifyMatchingPasswords()) {        
         event.preventDefault();        
+
+        inputPasswd.classList.remove("shake-controls");
+        inputConfPasswd.classList.remove("shake-controls");
+
+        // Used to restart animations
+        inputPasswd.offsetWidth;
+        inputConfPasswd.offsetWidth;
+
+        inputPasswd.classList.add("shake-controls");
+        inputConfPasswd.classList.add("shake-controls");
     }
 });
 

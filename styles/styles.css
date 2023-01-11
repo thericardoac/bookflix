@@ -168,7 +168,7 @@ header {
 .input-wrap input[type="text"], 
 .input-wrap input[type="email"],
 .input-wrap input[type="tel"],
-.input-wrap input[type="password"] {    
+.input-wrap input[type="password"] {        
     width: 100%;
     padding: 0.3125rem;
     font-size: 1rem;    
@@ -209,6 +209,12 @@ header {
     box-shadow: 0 0 0 0.2rem var(--primary-alert-color);    
 }
 
+.shake-controls {
+    animation-name: shakeControls;
+    animation-duration: 0.15s;    
+    animation-iteration-count: 2;
+}
+
 .terms-row {
     flex-direction: row;
     gap: 0.5rem;
@@ -239,6 +245,21 @@ footer p {
 
 footer p:last-of-type {
     margin-bottom: 0;
+}
+
+/* ANIMATIONS */
+@keyframes shakeControls {
+    33.33% {
+        transform: translateX(0.3rem);
+    }
+
+    66.66% {
+        transform: translateX(-0.3rem);
+    }
+
+    100% {
+        transform: translateX(0rem);
+    }
 }
 
 

@@ -2,7 +2,7 @@
 
 A sign-up form for the fictional service Bookflix.
 
-This form is just front-end design, it does not have back-end integration. Created to practice form controls and some mobile first and responsive design basics.
+This form is just front-end design, it does not have back-end integration. Coded from scratch using HTML, CSS and JavaScript.
 
 Live preview at: https://thericardoac.github.io/bookflix/
 

@@ -1,7 +1,7 @@
 # Bookflix sign-up form
 ![bookflix - Copy](https://user-images.githubusercontent.com/112439514/214977007-d17ab587-d4dd-4850-8011-bb10140348b7.png)
 
-## A sign-up form for the fictional service Bookflix.
+## Bookflix is a fictional service
 This form is just front-end design, it does not have back-end integration. Coded from scratch using HTML, CSS and JavaScript.
 
 ### Live preview here

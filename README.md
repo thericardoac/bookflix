@@ -1,5 +1,5 @@
 # Bookflix sign-up form
-![bookflix - Copy](https://user-images.githubusercontent.com/112439514/214977007-d17ab587-d4dd-4850-8011-bb10140348b7.png)
+![bookflix-tile](https://user-images.githubusercontent.com/112439514/215011746-35f3be9e-6938-47cb-b2ff-cd604d811155.jpg)
 
 ## Description 📚
 Bookflix is a fictional service to read books, magazines and more from a catalog.

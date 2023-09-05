@@ -22,8 +22,7 @@ inputConfPasswd.addEventListener("input", function() {
 
 // Starts verification and styling when user types
 inputPasswd.addEventListener("input", function() {
-    if (startVerification) {
-        //verifyMatchingPasswords();
+    if (startVerification) {        
         stylizePsswds(verifyMatchingPasswords());
     }    
 });
@@ -53,7 +52,7 @@ function verifyMatchingPasswords() {
     let doPasswordsMatch = false;    
 
     // Verifies if passwords match
-    if (password !== confPassword) {
+    if (password.trim() !== confPassword.trim()) {
         doPasswordsMatch = false;        
 
     } else {
@@ -61,15 +60,28 @@ function verifyMatchingPasswords() {
     }
 
     // Tells if passwords match or not
-    return doPasswordsMatch;
+    return doPasswordsMatch;    
 }
 
 
-// Stylizes the password alert legend and password inputs accordingly
+// Applies styles to the password alert legend and password inputs accordingly.
 function stylizePsswds(passwordsMatch) {
     let passwdLegend = document.querySelector(".psswds-legend");
     
     if(passwordsMatch) {
+        
+        // If both passwords match but are empty, resets the input and input legend styles.
+        if (inputPasswd.value.trim() === "" && inputConfPasswd.value.trim() === "") {
+            inputPasswd.classList.remove("psswds-mismatch-input");
+            inputConfPasswd.classList.remove("psswds-mismatch-input");
+            passwdLegend.classList.remove("psswds-mismatch-legend");
+            passwdLegend.textContent = "";
+            startVerification = false;
+            return;
+        }
+        
+        // If both passwords match and aren't empty, resets the input and input legend styles.
+        // Also applies the passwords match legend and styles.
         inputPasswd.classList.remove("psswds-mismatch-input");
         inputConfPasswd.classList.remove("psswds-mismatch-input");
         inputPasswd.classList.add("psswds-match-input");
@@ -77,9 +89,11 @@ function stylizePsswds(passwordsMatch) {
 
         passwdLegend.classList.remove("psswds-mismatch-legend");
         passwdLegend.classList.add("psswds-match-legend");        
-        passwdLegend.textContent = "Passwords match!";        
+        passwdLegend.textContent = "Passwords match!";
 
     } else {
+        // If both passwords don't match, resets the input and input legend styles.
+        // Also applies the passwords don't match legend and styles.
         inputPasswd.classList.remove("psswds-match-input");
         inputConfPasswd.classList.remove("psswds-match-input");
         inputPasswd.classList.add("psswds-mismatch-input");
